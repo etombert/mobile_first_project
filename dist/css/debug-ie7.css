@@ -1,0 +1,70 @@
+/*        < blank >       */
+/*     Nicolas Taffin     */
+/*  http://polylogue.com  */
+/*  	licence CC: BY-SA   */
+/* debuggage internet explorer : voir l'excellent http://esprit-creatif.blog.mongenie.com/index.php?idblogp=406297 */
+/* ************************************ */
+/*	LESS COMMONS : COLORS, FONTS, MIXINS*/
+/* ************************************ */
+/* sizes */
+/* custom colors */
+/* document colors */
+/* pair */
+/* impair */
+/*LANDING BOMMERCE*/
+/**
+*
+*	font style triggers
+*
+*/
+.fin, .light, .lighter {
+  font-family: 'titillium_web';
+  font-weight: 200; }
+
+/**
+*	
+*	mixins
+*
+*/
+.light-text {
+  font-family: 'titillium_web', Verdana, Arial, sans-serif;
+  font-weight: 200; }
+
+.normal-text {
+  font-family: 'titillium_web', Verdana, Arial, sans-serif; }
+
+.awesome {
+  font-family: "FontAwesome"; }
+
+.hidden {
+  display: none; }
+
+.underline {
+  text-decoration: underline; }
+
+.not-allowed {
+  background: #c5c5c5;
+  cursor: not-allowed; }
+
+.opacity {
+  opacity: 0; }
+
+.no-scroll {
+  overflow: hidden; }
+
+html {
+  overflow: auto; }
+
+.grid > * {
+  margin-left: 1.9%;
+  margin-right: 0;
+  float: right; }
+
+.grid div:first-child {
+  margin-left: 0;
+  float: left; }
+
+.grid div.col12 {
+  float: none; }
+
+/*# sourceMappingURL=debug-ie7.css.map */

@@ -1,0 +1,35 @@
+/*        < blank >       */
+/*     Nicolas Taffin     */
+/*  http://polylogue.com  */
+/*  	licence CC: BY-SA   */
+
+/* debuggage internet explorer : voir l'excellent http://esprit-creatif.blog.mongenie.com/index.php?idblogp=406297 */
+
+
+
+/* ************************************ */
+/*	LESS COMMONS : COLORS, FONTS, MIXINS*/
+/* ************************************ */
+
+@import "common";
+
+
+html {
+	overflow:auto;
+}
+
+.grid > * {
+
+	margin-left: 1.9%;
+	margin-right: 0;
+	float: right;
+
+}
+.grid div:first-child {
+	margin-left: 0;
+	float: left;
+}
+
+.grid div.col12 {
+	float: none;
+}
