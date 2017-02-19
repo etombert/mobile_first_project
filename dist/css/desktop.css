@@ -1,0 +1,46 @@
+/* colors */
+/**
+*
+*	font style triggers
+*
+*/
+.fin, .light, .lighter {
+  font-family: 'titillium_web';
+  font-weight: 200; }
+
+/* sizes */
+/** mixin **/
+section {
+  border: 50px solid #f0f4fa;
+  position: relative;
+  margin: 50px; }
+
+.section__1 {
+  text-align: center; }
+  .section__1 .content {
+    position: relative;
+    padding: 250px 0; }
+  .section__1 h1 {
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 150px; }
+    .section__1 h1:after {
+      content: "";
+      width: 1px;
+      height: 50px;
+      background: #ffffff;
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .section__1 a {
+    color: #ffffff;
+    font-family: 'andale_monoregular';
+    border: 1px solid #ffffff;
+    padding: 15px 30px; }
+
+/*# sourceMappingURL=desktop.css.map */

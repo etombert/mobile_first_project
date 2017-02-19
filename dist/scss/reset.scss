@@ -135,3 +135,49 @@ table {
     border-spacing: 0
 }
 
+
+
+// N?ORMALIZE
+a {
+    text-decoration: none;
+}
+
+h1, span.level-1 {
+    font-family: 'abril_fatfaceregular';
+}
+
+
+// PREDEFINI
+.light-text {
+    font-family: 'titillium_web', Verdana, Arial, sans-serif;
+    font-weight: 200;
+}
+.normal-text {
+    font-family: 'titillium_web', Verdana, Arial, sans-serif;
+}
+.awesome {
+    font-family: "FontAwesome";
+}
+.hidden {
+    display: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.not-allowed {
+    background: #c5c5c5;
+    cursor: not-allowed;
+}
+.opacity {
+    opacity: 0;
+}
+.no-scroll{
+    overflow: hidden;
+}
+.content {
+    position: relative;
+}
+.block-img {
+    display: block;
+    margin: 25px auto 0;
+}

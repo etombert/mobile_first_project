@@ -1,8 +1,5 @@
-/****************************************/
-/*					Theme				*/							
-/****************************************/
-
 @import "fonts";
 @import "reset";
-@import "CUSTOM";				
-@import "responsive";		/* Designer edits these ones  */
+@import "desktop";
+@import "tablet";
+@import "mobile";

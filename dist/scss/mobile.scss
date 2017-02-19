@@ -1,0 +1,82 @@
+@import "common";
+
+// section 1
+	section {
+	    border: 20px solid $background-section;
+	    position: relative;
+	    margin: 20px;
+	}
+
+
+	header {
+		.tag, .tag--menu {
+			font-family: 'theano';
+			font-weight: 100;
+		}
+		.tag--menu {
+
+		}
+	    .nav__left {
+	    	display: none;
+			width: 100%;
+			height: 100vh;
+			text-align: center;
+			font-family: 'abril_fatfaceregular';
+			ul {
+			    margin: 95px auto;
+			    border: 3px solid;
+			    width: 70%;
+			}
+			li {
+    			padding: 25px 0;
+			}
+			a {
+    			padding: 25px 0;
+    			font-size: 1.6em;
+			}
+			.cross {
+				font-size: 3em;
+				font-weight: 100;
+				font-family: monospace;
+				position: absolute;
+				top: 10%;
+				left: 50%;
+			    @include transform(translate(-50%, -50%));
+			}
+	    }
+	}
+
+	.section__1 {
+		background-image: url(../../dist/images/section_1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+
+		.content{
+			position: relative;
+			padding: 140px 0;
+		} 
+
+		h1 {
+			color: $white;
+			font-size: 4em;
+			margin-bottom: 150px;
+			&:after {
+			    content: "";
+			    width: 1px;
+			    height: 50px;
+			    background: $white;
+			    position: absolute;
+			    top: 53%;
+			    left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+
+		a {
+			color: $white;
+			font-family: 'andale_monoregular';
+			border: 1px solid $white;
+			padding: 15px 30px;
+		}
+	}	

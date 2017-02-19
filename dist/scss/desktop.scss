@@ -1,0 +1,39 @@
+@import "common";
+
+section {
+    border: 50px solid $background-section;
+    position: relative;
+    margin: 50px;
+}
+
+// section 1
+	.section__1 {
+		text-align: center;
+		.content{
+			position: relative;
+			padding: 250px 0;
+		} 
+
+		h1 {
+			color: $white;
+			font-size: 4em;
+			margin-bottom: 150px;
+			&:after {
+			    content: "";
+			    width: 1px;
+			    height: 50px;
+			    background: $white;
+			    position: absolute;
+			    top: 53%;
+			    left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+
+		a {
+			color: $white;
+			font-family: 'andale_monoregular';
+			border: 1px solid $white;
+			padding: 15px 30px;
+		}
+	}	

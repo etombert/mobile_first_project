@@ -1,9 +1,4 @@
-/* sizes */
-/* custom colors */
-/* document colors */
-/* pair */
-/* impair */
-/*LANDING BOMMERCE*/
+/* colors */
 /**
 *
 *	font style triggers
@@ -13,35 +8,7 @@
   font-family: 'titillium_web';
   font-weight: 200; }
 
-/**
-*	
-*	mixins
-*
-*/
-.light-text {
-  font-family: 'titillium_web', Verdana, Arial, sans-serif;
-  font-weight: 200; }
-
-.normal-text {
-  font-family: 'titillium_web', Verdana, Arial, sans-serif; }
-
-.awesome {
-  font-family: "FontAwesome"; }
-
-.hidden {
-  display: none; }
-
-.underline {
-  text-decoration: underline; }
-
-.not-allowed {
-  background: #c5c5c5;
-  cursor: not-allowed; }
-
-.opacity {
-  opacity: 0; }
-
-.no-scroll {
-  overflow: hidden; }
+/* sizes */
+/** mixin **/
 
 /*# sourceMappingURL=common.css.map */

@@ -1,22 +1,4 @@
-// bomerce
-$bom-green: #6de549;
-$bom-green2: #65d544;
-$bom-blue: #354459;
-$bom-blue2: #1d2a3e;
-$bom-blue-alt: #4952a1;
-$bom-blue2-alt: #30346d;
-$white: #ffffff;
-$bom-gray: #e2e6f1;
-$bom-gray2: #c8ceda;
-$bom-cyan: #81edfc;
-$bom-cyan2: #2ae8fc;
-$bom-purple: #633662;
-$bom-magenta: #aa41a2;
-
-$back: #e5e5e5;
-$sail: rgba(47, 47, 54, 0.65);
-// bomerce 2 spectrum palette
-
+/* colors */
 $indigo: #5d40cf;
 $blue: #89a2dd;
 $green1: #79e446;
@@ -33,130 +15,12 @@ $gray-light: #C5C5CD;
 $lightest: #F4F4F7;
 $white: #ffffff;
 $sky-blue: #48b1e6;
-
-
-/* sizes */
-
-$pageHeaderHeight: 80px;
-$pageFooterHeight: 0px;
-
-$menuHeight: 80px;
-$hamburgerHeight: 25px;
-
-$labelWidth: 100%;
-$inputWidth: 100%;
-$textareaWidth: 100%;
-
-$bubble-combo-size: 450px;
-$login-bubble-size: 450px;
-
-/* custom colors */
-
-$back: $bom-gray;
-
-$light: $bom-gray;
-$neutral: $bom-gray2;
-$dark: $gray-dark;
 $black: black;
 
-$highlight: $bom-green;
-$alt: $bom-purple;
-$fluo: #FFFFB2;
-$ok: $green2;
-$pb: red;
-$mid: orange;
-$sky: $bom-cyan;
+// text-color
+$background: $white;
+$background-section: #f0f4fa;
 
-
-/* document colors */
-
-$text: #444;
-$title: $text;
-$header: $alt;
-$link: $alt;
-$body: $gray-dark;
-$pageBack: $body;
-
-$pageHeader: darken($bom-blue, 5%);
-$pageHeaderText: fade($lightest, 90%);
-
-$pageFooter: fade($lightest, 30%);
-$pageFooterText: $lightest;
-
-$main: transparent;
-$mainText: $text;
-
-$code: fade($sky, 10%);
-$even: fade($sky, 20%); /* pair */
-$odd: fade($white, 10%);	/* impair */		
-
-$tabBar: lighten($light, 10%);
-
-$nav: $darkest;
-
-$menu: white;
-$subMenu: $lightest;
-$subMenuText: $darkest;
-$menuText: lighten($text,15%);
-$menuHover: lighten($highlight,5%);
-$menuHoverText: $text;
-$menuSelect:  $darkest;
-$menuSelectText: $lightest;
-
-$tab : lighten($light, 10%);
-$tabText : #888;
-$tabHover: lighten($light, 0%);
-$tabHoverText: $tabText;
-$tabSelect : white;
-$tabSelectText: $tabText;
-
-$breadcrumb: $sky;
-
-$field : $white;
-$fieldText : lighten($text, 15%);
-$fieldBorder : lighten($light, 5%);
-$fieldActive : fade( $sky, 5%);
-$fieldActiveText : $text;
-$fieldActiveBorder : $sky;
-
-$submit: $ok;
-$submitText: $white;
-$submitShadow: $text;
-$submitBorder: $ok;
-
-$reset: $light;
-$resetText: $text;
-$resetShadow: $white;
-$resetBorder: $light;
-
-$button: lighten($light, 15%);
-$buttonText: $text;
-$buttonShadow: $white;
-$buttonBorder: $light;
-
-$cta: #0d59bc;
-$ctaText: $white;
-$ctaShadow: $text;
-$ctaBorder: $cta;
-
-
-$social: fade($lightest, 40%); 
-$socialText: $lightest;
-
-$language: fade($lightest, 40%); 
-$languageText: $lightest;
-
-$disclaimer: $fluo;
-$disclaimerText: $text;
-
-
-/*LANDING BOMMERCE*/
-$form-title: #00cc0d;
-$even: #354459;
-$odd: #f5f5f5;
-$odd-text: rgb(170, 65, 162);
-$purple-button: #633662;
-$button-hover-blue: #0066cc;
 
 /**
 *
@@ -170,41 +34,12 @@ $button-hover-blue: #0066cc;
 	font-weight: 200;
 }
 
+/* sizes */
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
 
-
-
-/**
-*	
-*	mixins
-*
-*/
-
-.light-text {
-	font-family: 'titillium_web', Verdana, Arial, sans-serif;
-	font-weight: 200;
-}
-.normal-text {
-	font-family: 'titillium_web', Verdana, Arial, sans-serif;
-}
-.awesome {
-	font-family: "FontAwesome";
-}
-.hidden {
-	display: none;
-}
-.underline {
-	text-decoration: underline;
-}
-.not-allowed {
-	background: #c5c5c5;
-	cursor: not-allowed;
-}
-.opacity {
-	opacity: 0;
-}
-.no-scroll{
-	overflow: hidden;
-}
+/** mixin **/
 
 @mixin gradient($startColor: #eee, $endColor: white)
 {
