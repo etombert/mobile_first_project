@@ -6,7 +6,23 @@
 	    position: relative;
 	    margin: 20px;
 	}
-
+	img {
+	    width: 150px;
+		margin: auto;
+		display: block;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	span {
+		font-size: 1.15em;
+	}
+	p {
+		font-size: 0.8em;
+	}
+	h3, p, span {
+		font-family: 'andale_monoregular';
+	}
 
 	header {
 		.tag, .tag--menu {
@@ -59,7 +75,7 @@
 
 		h1 {
 			color: $white;
-			font-size: 4em;
+			font-size: 1.5em;
 			margin-bottom: 150px;
 			&:after {
 			    content: "";
@@ -67,7 +83,7 @@
 			    height: 50px;
 			    background: $white;
 			    position: absolute;
-			    top: 53%;
+			    top: 48%;
 			    left: 50%;
 				@include transform(translate(-50%, -50%));
 			}
@@ -80,3 +96,12 @@
 			padding: 15px 30px;
 		}
 	}	
+
+	.section__2 {
+		background-color: $background-section;
+		.bloc--1 {
+			h3, p, span {
+				line-height: 2;
+			}
+		}
+	}

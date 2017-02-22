@@ -269,6 +269,23 @@ section {
   position: relative;
   margin: 20px; }
 
+img {
+  width: 150px;
+  margin: auto;
+  display: block; }
+
+h3 {
+  font-size: 1.3em; }
+
+span {
+  font-size: 1.15em; }
+
+p {
+  font-size: 0.8em; }
+
+h3, p, span {
+  font-family: 'andale_monoregular'; }
+
 header .tag, header .tag--menu {
   font-family: 'theano';
   font-weight: 100; }
@@ -310,7 +327,7 @@ header .nav__left {
     padding: 140px 0; }
   .section__1 h1 {
     color: #ffffff;
-    font-size: 4em;
+    font-size: 1.5em;
     margin-bottom: 150px; }
     .section__1 h1:after {
       content: "";
@@ -318,7 +335,7 @@ header .nav__left {
       height: 50px;
       background: #ffffff;
       position: absolute;
-      top: 53%;
+      top: 48%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
@@ -330,5 +347,10 @@ header .nav__left {
     font-family: 'andale_monoregular';
     border: 1px solid #ffffff;
     padding: 15px 30px; }
+
+.section__2 {
+  background-color: #f0f4fa; }
+  .section__2 .bloc--1 h3, .section__2 .bloc--1 p, .section__2 .bloc--1 span {
+    line-height: 2; }
 
 /*# sourceMappingURL=styles.css.map */
