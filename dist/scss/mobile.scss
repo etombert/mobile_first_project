@@ -1,10 +1,10 @@
 @import "common";
 
-// section 1
 	section {
 	    border: 20px solid $background-section;
 	    position: relative;
 	    margin: 20px;
+		background-color: $background-section;
 	}
 	img {
 	    width: 150px;
@@ -23,7 +23,82 @@
 	h3, p, span {
 		font-family: 'andale_monoregular';
 	}
+	nav.orientation {
+	    padding: 30px 0;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			font-family: 'andale_monoregular';
+		}
+		li {
+			font-size: 0.7em;
+		}
+	}
 
+
+	// slider section 4
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-button-prev {
+		position: absolute;
+		top: 12%;
+		left: 50%;
+		background-image: none;
+		@include transform(translate(-50%, -50%));
+		p {
+			&:after {
+				content: "";
+				width: 1px;
+				height: 30px;
+				background-color: $black;
+				display: block;
+				margin: 10px auto;
+			}
+		}
+    }
+
+    .swiper-button-next {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		background-image: none;
+		@include transform(translate(-50%, -50%));
+		p {
+			&:before {
+				content: "";
+				width: 1px;
+				height: 30px;
+				background-color: $black;
+				display: block;
+				margin: 10px auto;
+			}
+		}
+    }
+
+// BODY STYLE
 	header {
 		.tag, .tag--menu {
 			font-family: 'theano';
@@ -62,6 +137,7 @@
 	    }
 	}
 
+// section 1
 	.section__1 {
 		background-image: url(../../dist/images/section_1.jpg);
 		background-size: cover;
@@ -75,15 +151,16 @@
 
 		h1 {
 			color: $white;
-			font-size: 1.5em;
-			margin-bottom: 150px;
+		    font-size: 2.2em;
+		    padding: 0 0 150px;
+		    text-align: center;
 			&:after {
 			    content: "";
 			    width: 1px;
 			    height: 50px;
 			    background: $white;
 			    position: absolute;
-			    top: 48%;
+			    top: 52%;
 			    left: 50%;
 				@include transform(translate(-50%, -50%));
 			}
@@ -94,14 +171,153 @@
 			font-family: 'andale_monoregular';
 			border: 1px solid $white;
 			padding: 15px 30px;
+		    font-size: 0.65em;
 		}
 	}	
 
+// section 2
 	.section__2 {
-		background-color: $background-section;
 		.bloc--1 {
+			.content {
+			    text-align: center;
+			    margin: 30px 0;
+			}
 			h3, p, span {
 				line-height: 2;
 			}
 		}
+		.bloc--2 {
+			h2 {
+				&:after {
+					content: "";
+					width: 40px;
+					height: 3px;
+					background: $black;
+				    display: block;
+				    margin: auto;
+				}
+			}
+			span {
+				display: block;
+				text-align: center;
+				margin: 20px auto;
+			}
+			.level_1 {
+				font-family: 'abril_fatfaceregular';
+			    font-size: 2em;
+			}
+			.level_2 {
+
+			}
+			p {
+			    margin: 40px auto 20px;
+			    padding: 0 25px;
+			}
+		}
+		.bloc--3 {
+			p {
+				text-align: center;
+				margin: 30px auto;
+				font-size: 1em;
+				position: relative;
+				&:after {
+				    content: "";
+				    width: 40px;
+				    height: 1px;
+				    background: $black;
+				    position: absolute;
+			        bottom: -20px;
+				    left: 50%;
+					@include transform(translate(-50%, -50%));
+				}
+			}
+		}
 	}
+
+// section 3
+	.section__3 {
+		h2 {
+			&:after {
+				content: "";
+				width: 40px;
+				height: 3px;
+				background: $black;
+				display: block;
+				margin: auto;
+			}
+		}
+		span {
+			display: block;
+			text-align: center;
+			margin: 20px auto;
+		}
+		.level_1 {
+			font-family: 'abril_fatfaceregular';
+		    font-size: 2em;
+		}
+		.level_2 {
+
+		}
+		img {
+		    width: 230px;
+		    margin: 60px auto 0;
+		    display: block;
+		}
+		.paragraph {
+			background: white;
+		    width: 100%;
+		    max-width: 130px;
+		    margin: 0 auto;
+		    padding: 15px 25px;
+		    position: relative;
+		    top: -30px;
+		    @include shadows(0px 2px 25px rgba(0, 0, 0, 0.3));
+		}
+		h3 {
+			padding-bottom: 20px;
+		}
+		p {
+			line-height: 1.3;
+			font-size: 0.7em;
+		}
+	}
+
+// section 4
+	.section__4 {
+		.content {
+			height: 400px;
+			background: white;
+			padding: 90px 20px;
+			@include shadows(0px 2px 25px rgba(0, 0, 0, 0.3));
+		}
+		img {
+			width: 100%;
+
+		}
+	}
+
+// section 5
+	.section__5 {
+		.content {
+
+		}
+		.contact_me {
+			background-color: $white;
+		}
+		h2 {
+			text-align: center;
+			&:after {
+				content: "";
+				width: 40px;
+				height: 3px;
+				background: $black;
+			    display: block;
+		        margin: 15px auto;
+			}
+		} 
+		.level_1 {
+			font-family: 'abril_fatfaceregular';
+		    font-size: 2em;
+		}
+	}
+
