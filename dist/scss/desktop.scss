@@ -1,39 +1,120 @@
 @import "common";
 
+
 section {
-    border: 50px solid $background-section;
-    position: relative;
-    margin: 50px;
+    background-color: rgba(240, 244, 250, 0.75);
+    border: 70px solid rgba(240, 244, 250, 0) !important;
+    border-bottom: 70px solid rgba(240, 244, 250, 0) !important;
+    margin: 50px 70px 70px !important;
 }
 
-// section 1
-	.section__1 {
+header {
+	.nav__left {
+		width: 50%;
+	}
+}
+
+
+.pagination-bottom {
+    top: 50%!important;
+    right: -95px!important;
+    left: initial!important;
+    @include transform(translate(0%, 0%)!important);
+		&:after {
+		    content: url(../../dist/images/menu2.png);
+		    position: absolute;
+		    top: 15px;
+		    left: 30px;
+		}
+}
+
+.pagination-title {
+    top: 50%!important;
+    right: 0!important;
+    left: 0!important;
+    @include transform(translate(55.9%, 0%) rotate(-90deg) !important);
+
+
+    bottom: initial !important;
+    width: initial !important;
+    font-size: 6em !important;
+
+}
+
+
+.section__1 {
+	h1 {
+	    padding: 55px 0 150px;
+	    &:after {
+	    	@include transform(translate(-50%, 0%));
+	    }
+	}
+
+}
+
+.section__2 {
+	.bloc--1 {
+		width: 250px;
+		float: left;
+		@include transform(translate(0%, 0%));
+		.content {
+		    text-align: left;
+		}
+	}
+	.bloc--2 {
+		width: 350px;
+		float: right;
+		@include transform(translate(0%, 0%)); 
+		span {
+		    margin: 5px auto;
+		}
+		span.level_2 {
+		    margin: 0px 0 0 75px;
+		    font-size: 1em;
+		}
+		h2:after {
+		    width: 35px;
+		    height: 4px;
+		    position: absolute;
+		    right: 75px;
+		    top: 47px;
+		}
+	}
+	.bloc--3 {
+		width: 350px;
 		text-align: center;
-		.content{
-			position: relative;
-			padding: 250px 0;
-		} 
+		@include transform(translate(50%, 0%));
+	}
+}
 
-		h1 {
-			color: $white;
-			font-size: 4em;
-			margin-bottom: 150px;
-			&:after {
-			    content: "";
-			    width: 1px;
-			    height: 50px;
-			    background: $white;
-			    position: absolute;
-			    top: 53%;
-			    left: 50%;
-				@include transform(translate(-50%, -50%));
-			}
+.section__3 {
+	h2 {
+		&:after {
+		    width: 35px;
+		    height: 4px;
+		    position: absolute;
+			left: 148px;
+			top: 48px;
+		}	
+		span {
+			margin: 5px 0;
+			text-align: inherit;
 		}
+		.level_2 {
+		    margin: 5px 0 0 95px;
+		} 	
+	}
+	.paragraph {
+	    padding: 35px 75px;
+        max-width: 265px;
+        margin: 0;
+	}
+}
 
-		a {
-			color: $white;
-			font-family: 'andale_monoregular';
-			border: 1px solid $white;
-			padding: 15px 30px;
-		}
-	}	
+.section__4 {
+
+}
+
+.section__5 {
+
+}

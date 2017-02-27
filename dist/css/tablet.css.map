@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAY;AAwBZ;;;;EAIE;AAGF,sBAAwB;EACvB,WAAW,EAAE,eAAe;EAC5B,WAAW,EAAE,GAAG;;AAGjB,WAAW;AAKX,aAAa",
-"sources": ["../scss/common.scss"],
+"mappings": "AAAA,YAAY;AAyBZ;;;;EAIE;AAGF,sBAAwB;EACvB,WAAW,EAAE,eAAe;EAC5B,WAAW,EAAE,GAAG;;AAGjB,WAAW;AAKX,aAAa;ACvCZ,cAAG;EACC,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,oBAAQ;IACJ,GAAG,EAAE,GAAG;;AAOf,6BAAS;EACL,UAAU,EAAE,MAAM;;AAMvB,oBAAS;EACL,OAAO,EAAE,gBAAgB;EACzB,MAAM,EAAE,KAAK",
+"sources": ["../scss/common.scss","../scss/tablet.scss"],
 "names": [],
 "file": "tablet.css"
 }
