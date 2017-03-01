@@ -36,7 +36,7 @@ nav.orientation {
     width: 420px; }
 
 .swiper-button-prev {
-  top: 0; }
+  top: -6px; }
 
 .swiper-button-next {
   bottom: -55px;

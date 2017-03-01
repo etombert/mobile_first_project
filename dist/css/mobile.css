@@ -378,6 +378,12 @@ header {
   -ms-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); }
+  .section__4 .content p.title-name {
+    position: absolute;
+    background: white;
+    padding: 5px 20px;
+    left: 0px;
+    z-index: 10; }
 .section__4 img {
   width: 100%;
   max-width: 100% !important; }
